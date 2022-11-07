@@ -16,7 +16,7 @@
     height: 100%;
     overflow: hidden;
     position: absolute;
-    background-image: url(../images/bg2.jpg);
+    background-image: url(../images/bg1.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -31,7 +31,7 @@
     height: 100%;
     overflow: hidden;
     position: absolute;
-    background-image: url(../images/bg1.jpg);
+    background-image: url(../images/bg2.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -46,7 +46,7 @@
     height: 100%;
     overflow: hidden;
     position: absolute;
-    background-image: url(../images/bg3.JPG);
+    background-image: url(../images/bg3.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -60,7 +60,7 @@
     position: absolute;
     height: 35rem;
     width: 60rem;
-    background-image: url(../images/bg2.jpg);
+    background-image: url(../images/bg1.jpg);
     left: 30rem;
     top: 4rem;
     display: flex;
@@ -75,7 +75,7 @@
     position: absolute;
     height: 35rem;
     width: 60rem;
-    background-image: url(../images/bg1.jpg);
+    background-image: url(../images/bg2.jpg);
     left: 30rem;
     top: 4rem;
     display: flex;
@@ -91,7 +91,7 @@
     position: absolute;
     height: 35rem;
     width: 60rem;
-    background-image: url(../images/bg3.JPG);
+    background-image: url(../images/bg3.jpg);
     background-position: 50% 25%;
     left: 30rem;
     top: 4rem;
@@ -177,7 +177,7 @@
     width: 10rem;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
-    background-image: url(../images/bg2.jpg);
+    background-image: url(../images/bg1.jpg);
     background-position: 7.5% 0.07142857142%;
     z-index: 2;
     transition: all 0.3s ease-in-out;
@@ -207,7 +207,7 @@
     border-radius: 5rem;
     height: 5rem;
     width: 10rem;
-    background-image: url(../images/bg1.jpg);
+    background-image: url(../images/bg2.jpg);
     background-position: 50% 0.07142857142%;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
@@ -243,7 +243,7 @@
     width: 10rem;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
-    background-image: url(../images/bg3.JPG);
+    background-image: url(../images/bg3.jpg);
     background-position: 92.5% 15%;
     z-index: 2;
     transform: translateX(42rem);
