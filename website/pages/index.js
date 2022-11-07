@@ -2,6 +2,7 @@ import styles from '../styles/Home.module.css'
 import react from 'react'
 import Button from '../comps/Button'
 import { useState } from "react";
+import {FaRegEnvelope, FaCode, FaUser, FaArrowAltCircleUp} from 'react-icons/fa'
 
 
 export default function Home() {
@@ -34,26 +35,27 @@ export default function Home() {
   let close = <img src="https://img.icons8.com/ios/50/null/cancel.png"/>
 
   return (
-    <div className={styles.container}>
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <div className={(ball1) ? styles.container1 : ((ball2) ? styles.container2 : styles.container3)}>
       <title>Portfolio</title>
       <div className={(btnClass) ? styles.static : styles.move}>
-        <div className={styles.header}>
+        <div style={(ball2) ? {color: 'white'} : {color: 'black'}} className={styles.header}>
           <h1><span>&lt;</span>cole seguin<span>&gt;</span></h1>
           <h1><span>&lt;</span>web<span>&gt;</span></h1>
           <h1><span>&lt;</span>devloper<span>&gt;</span></h1>
         </div>
-        <div className={styles.info}>
-          <button onClick={handleClick1} className={styles.btn1}><img src="https://img.icons8.com/pastel-glyph/64/null/handshake--v1.png"/></button>
-          <button onClick={handleClick2} className={styles.btn2}><img src="https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/64/null/external-skills-business-and-management-kiranshastry-lineal-kiranshastry-7.png"/></button>
-          <button onClick={handleClick3} className={styles.btn3}><img src="https://img.icons8.com/ios/50/null/i-pronoun.png"/></button>
+        <div className={styles.balltest}></div>
+        <div className={(ball1) ? styles.info1 : ((ball2) ? styles.info2 : styles.info3)}>
+          <button onClick={handleClick1} className={styles.btn1}><span style={(ball2) ? {color: 'white'} : {color: 'black'}}><FaRegEnvelope size='3em'/></span></button>
+          <button onClick={handleClick2} style={(ball2) ? {color: 'white'} : {color: 'black'}} className={styles.btn2}><span style={(ball2) ? {color: 'white'} : {color: 'black'}}><FaCode size='3em'/></span></button>
+          <button onClick={handleClick3} className={styles.btn3}><span style={(ball2) ? {color: 'white'} : {color: 'black'}}><FaUser size='3em'/></span></button>
           <div className={(ball1) ? styles.tabs1 : ((ball2) ? styles.tabs2 : styles.tabs3)}></div>
           <div className={(ball1) ? styles.ball1 : ((ball2) ? styles.ball2 : styles.ball3)}></div>
+          <div className={(ball1) ? styles.ball1shade : ((ball2) ? styles.ball2shade : styles.ball3shade)}></div>
         </div>
       </div>
       <div className={styles.menucontainer}>
-            <button className={btnToggle} onClick={toggleMenu}>
-                <span className="material-icons">{btnClass ? menu : close}</span>
+            <button style={(ball2) ? {color: 'white'} : {color: 'black'}} className={btnToggle} onClick={toggleMenu}>
+                <span><FaArrowAltCircleUp size="3em"/></span>
             </button>
             <div className={btnToggle2}>
                 <div className={styles.project1}>
