@@ -1,0 +1,294 @@
+.move{
+    display: flex;
+    transform: translateY(-12rem);
+    transition: all 0.4s ease-in-out;
+}
+.static{
+    display: flex;
+    transition: all 0.4s ease-in-out;
+}
+.container{
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    background-image: url(../images/1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    animation: change 30s infinite ease-in-out;
+}
+.containerup{
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    background-image: url(../images/1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    animation: change 30s infinite ease-in-out;
+}
+.header{
+    color: white;
+    font-family: 'Source Code Pro', monospace;
+}
+.info{
+    position: absolute;
+    height: 35rem;
+    width: 60rem;
+    background-color: #6b7280;
+    left: 30rem;
+    top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+    border-radius: 5rem;
+    z-index: 3;
+}
+.tabs1{
+    height: 35rem;
+    width: 60rem;
+    background-color: #22d3ee;
+    z-index: 2;
+    border-top: 2px solid black;
+    transition: all 0.3s ease-in-out;
+}
+.tabs2{
+    height: 35rem;
+    width: 60rem;
+    background-color: #5eead4;
+    z-index: 2;
+    border-top: 2px solid black;
+    transition: all 0.3s ease-in-out;
+}
+.tabs3{
+    height: 35rem;
+    width: 60rem;
+    background-color: #c084fc;
+    z-index: 2;
+    border-top: 2px solid black;
+    transition: all 0.3s ease-in-out;
+}
+.btn1{
+    position: absolute;
+    font-weight: bold;
+    font-size: large;
+    top: 0rem;
+    left: 6rem;
+    border: none;
+    height: 5rem;
+    width: 6rem;
+    background: none;
+    z-index: 3;
+    cursor: pointer;
+}
+.btn2{
+    position: absolute;
+    top: 0rem;
+    left: 27rem;
+    width: 6rem;
+    height: 5rem;
+    border: none;
+    background: none;
+    z-index: 3;
+    cursor: pointer;
+}
+.btn3{
+    position: absolute;
+    top: 0rem;
+    right: 6rem;
+    width: 6rem;
+    height: 5rem;
+    border: none;
+    background: none;
+    z-index: 3;
+    cursor: pointer;
+}
+.ball1{
+    position: absolute;
+    top: 0;
+    left: 4rem;
+    border: 2px solid black;
+    border-bottom: none;
+    border-radius: 5rem;
+    height: 5rem;
+    width: 10rem;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    background-color: #22d3ee;
+    z-index: 2;
+    transition: all 0.3s ease-in-out;
+}
+.ball2{
+    position: absolute;
+    top: 0;
+    left: 4rem;
+    border: 2px solid black;
+    border-bottom: none;
+    border-radius: 5rem;
+    height: 5rem;
+    width: 10rem;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    background-color: #5eead4;
+    z-index: 2;
+    transform: translateX(21rem);
+    transition: all 0.3s ease-in-out;
+}
+.ball3{
+    position: absolute;
+    top: 0;
+    left: 4rem;
+    border: 2px solid black;
+    border-bottom: none;
+    border-radius: 5rem;
+    height: 5rem;
+    width: 10rem;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    background-color: #c084fc;
+    z-index: 2;
+    transform: translateX(42rem);
+    transition: all 0.3s ease-in-out;
+}
+.menubtn{
+    position: absolute;
+    bottom: 3rem;
+    left: 48%;
+    background-color: #22d3ee;
+    color: white;
+    border: 0;
+    border-radius: 5rem;
+    width: 5rem;
+    height: 5rem;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    box-shadow: 0rem 0rem 4rem rgba(0, 0, 0, 35%);
+    z-index: 3;
+  }
+  .menubtn:hover{
+    background-color: #0891b2;
+  }
+  .menubtnactive{
+    position: absolute;
+    bottom: 3rem;
+    left: 48%;
+    background-color: #0891b2;
+    color: white;
+    border: 0;
+    border-radius: 5rem;
+    width: 5rem;
+    height: 5rem;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    box-shadow: 0rem 0rem 4rem rgba(0, 0, 0, 35%);
+    z-index: 3;
+    transform: translateY(-12rem);
+  }
+  .menubtnactive:hover{
+    background-color: #22d3ee;
+  }
+  .menucontent{
+    position: absolute;
+    display: flex;
+    bottom: -12rem;
+    left: 0;
+    width: 100%;
+    height: 12rem;
+    z-index: 100;
+    background: none;
+    transform: translateY(-12rem);
+    transition: all 0.42s ease-in-out;
+    justify-content: center;
+    align-items: center;
+  }
+  .menucontentactive{
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 12rem;
+    z-index: 100;
+    background: none;
+    transform: translateY(12rem);
+    transition: all 0.42s ease-in-out;
+    justify-content: center;
+    align-items: center;
+  }
+  .project1{
+    position: relative;
+    display: flex;
+    height: 10rem;
+    width: 18%;
+    border: 1px solid white;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: large;
+    background-color: black;
+    margin: 2rem;
+  }
+  .project2{
+    position: relative;
+    display: flex;
+    height: 10rem;
+    width: 18%;
+    border: 1px solid white;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: large;
+    background-color: black;
+    margin: 2rem;
+  }
+  .project3{
+    position: relative;
+    display: flex;
+    height: 10rem;
+    width: 18%;
+    border: 1px solid white;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: large;
+    background-color: black;
+    margin: 2rem;
+  }
+
+
+
+
+
+@keyframes change{
+    20%{
+        background-image: url(../images/1.jpg);
+    }
+    40%{
+        background-image: url(../images/2.jpg);
+    }
+    60%{
+        background-image: url(../images/3.jpg);
+    }
+    80%{
+        background-image: url(../images/4.jpg);
+    }
+    100%{
+        background-image: url(../images/5.jpg);
+    }
+}
